@@ -33,7 +33,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     message: 'Passing an arbitrary number of elements to Element.show is no longer supported.\n' +
       'Use [id_1, id_2, ...].each(Element.show) or $(id_1, id_2, ...).invoke("show") instead.',
     type: 'error',
-    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]) }
+    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]); }
   },
   
   {
@@ -42,7 +42,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     message: 'Passing an arbitrary number of elements to Element.hide is no longer supported.\n' +
       'Use [id_1, id_2, ...].each(Element.hide) or $(id_1, id_2, ...).invoke("hide") instead.',
     type: 'error',
-    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]) }
+    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]); }
   },
   
   {
@@ -51,7 +51,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     message: 'Passing an arbitrary number of elements to Element.toggle is no longer supported.\n' +
       'Use [id_1, id_2, ...].each(Element.toggle) or $(id_1, id_2, ...).invoke("toggle") instead.',
     type: 'error',
-    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]) }
+    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]); }
   },
   
   {
@@ -60,7 +60,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     message: 'Passing an arbitrary number of elements to Field.clear is no longer supported.\n' +
       'Use [id_1, id_2, ...].each(Form.Element.clear) or $(id_1, id_2, ...).invoke("clear") instead.',
     type: 'error',
-    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]) }
+    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]); }
   },
   
   {
@@ -69,7 +69,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     message: 'Passing an arbitrary number of elements to Field.present is no longer supported.\n' +
       'Use [id_1, id_2, ...].each(Form.Element.present) or $(id_1, id_2, ...).invoke("present") instead.',
     type: 'error',
-    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]) }
+    condition: function() { return arguments.length > 1 && !Object.isNumber(arguments[1]); }
   },
   
   {
@@ -265,7 +265,7 @@ var prototypeUpdateHelper = new UpdateHelper([
     namespace: Class,
     message: 'The class API has been fully revised and now allows for mixins and inheritance.\n' + 
       'You can find more about it here: http://prototypejs.org/learn/class-inheritance',
-    condition: function() { return !arguments.length }
+    condition: function() { return !arguments.length; }
   }
 ]);
 

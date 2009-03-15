@@ -61,7 +61,7 @@ var UpdateHelper = Class.create({
   },
   
   log: function(message, type) {
-    if (Object.isUndefined(console)) return;
+    if (typeof console === 'undefined') return;
     if (type == 'error') console.error(message);
     else if (type == 'warn') console.warn(message);
     else console.log(message);
